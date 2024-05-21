@@ -291,40 +291,76 @@ function abbrevName(name) {
 }
 ```
 
-## Name :
+## Name : Are You Playing Banjo?
 
 ```js
-
+function areYouPlayingBanjo(name) {
+  if (name[0] === "r" || name[0] === "R") {
+    return name + " plays banjo";
+  }
+  return name + " does not play banjo";
+}
 ```
 
-## Name :
+## Name : A Needle in the Haystack
 
 ```js
-
+function findNeedle(haystack) {
+  let message = "";
+  haystack.forEach((el, index) => {
+    if (el === "needle") {
+      message = `found the needle at position ${index}`;
+    }
+  });
+  return message;
+}
 ```
 
-## Name :
+## Name : Invert values
 
 ```js
-
+function invert(array) {
+  return array.map((num) => {
+    return -num;
+  });
+}
 ```
 
-## Name :
+## Name : Calculate average
 
 ```js
-
+function findAverage(array) {
+  let sum = 0;
+  if (array.length > 0) {
+    array.forEach((el) => {
+      sum += el;
+    });
+    return sum / array.length;
+  }
+  return 0;
+}
 ```
 
-## Name :
+## Name : Is he gonna survive?
 
 ```js
-
+function hero(bullets, dragons) {
+  return bullets / 2 >= dragons ? true : false;
+}
 ```
 
-## Name :
+## Name : How good are you really?
 
 ```js
-
+function betterThanAverage(classPoints, yourPoints) {
+  let sum = 0;
+  let average = 0;
+  classPoints.forEach((num) => {
+    sum += num;
+    average = sum / classPoints.length;
+  });
+  return average < yourPoints ? true : false;
+}
 ```
 
 ## Name :
