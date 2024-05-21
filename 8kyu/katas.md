@@ -157,22 +157,37 @@ function doubleInteger(i) {
 }
 ```
 
-## Name :
+## Name : Returning Strings
 
 ```js
-
+function greet(name) {
+  return `Hello, ${name} how are you doing today?`;
+}
 ```
 
-## Name :
+## Name : Convert a Boolean to a String
 
 ```js
-
+function booleanToString(b) {
+  return b + "";
+}
 ```
 
-## Name :
+## Name : Basic Mathematical Operations
 
 ```js
-
+function basicOp(operation, value1, value2) {
+  switch (operation) {
+    case "+":
+      return value1 + value2;
+    case "-":
+      return value1 - value2;
+    case "*":
+      return value1 * value2;
+    case "/":
+      return value1 / value2;
+  }
+}
 ```
 
 ## Name :
