@@ -246,28 +246,49 @@ function lovefunc(flower1, flower2) {
 }
 ```
 
-## Name :
+## Name : Beginner Series #1 School Paperwork
 
 ```js
-
+function paperwork(n, m) {
+  if (n < 0 || m < 0) {
+    return 0;
+  }
+  return n * m;
+}
 ```
 
-## Name :
+## Name : Beginner Series #2 Clock
 
 ```js
-
+function past(h, m, s) {
+  let hoursInMilliseconds = h * 3600000;
+  let minutesInMilliseconds = m * 60000;
+  let secondsInMilliseconds = s * 1000;
+  let result =
+    hoursInMilliseconds + minutesInMilliseconds + secondsInMilliseconds;
+  return result;
+}
 ```
 
-## Name :
+## Name : Simple multiplication
 
 ```js
-
+function simpleMultiplication(number) {
+  if (number % 2) return number * 9;
+  return number * 8;
+}
 ```
 
-## Name :
+## Name : Abbreviate a Two Word Name
 
 ```js
-
+function abbrevName(name) {
+  let arr = [];
+  name.split(" ").forEach((el) => {
+    arr.push(el[0]);
+  });
+  return arr.join(".").toUpperCase();
+}
 ```
 
 ## Name :
