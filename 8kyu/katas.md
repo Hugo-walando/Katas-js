@@ -211,22 +211,39 @@ function century(year) {
 }
 ```
 
-## Name :
+## Name : Beginner - Lost Without a Map
 
 ```js
-
+function maps(x) {
+  return x.map((num) => {
+    return num * 2;
+  });
+}
 ```
 
-## Name :
+## Name : Convert number to reversed array of digits
 
 ```js
-
+function digitize(n) {
+  let arr = Array.from(String(n)).reverse();
+  return arr.map((el) => {
+    return +el;
+  });
+}
 ```
 
-## Name :
+## Name : Opposites Attract
 
 ```js
-
+function lovefunc(flower1, flower2) {
+  if (flower1 % 2 !== 0 && flower2 % 2 !== 0) {
+    return false;
+  } else if (flower1 % 2 === 0 && flower2 % 2 === 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
 ```
 
 ## Name :
