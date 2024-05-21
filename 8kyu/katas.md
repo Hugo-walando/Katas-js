@@ -48,22 +48,40 @@ function positiveSum(arr) {
 }
 ```
 
-## Name :
+## Name : String repeat
 
 ```js
-
+function repeatStr(n, s) {
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    str += s;
+  }
+  return str;
+}
 ```
 
-## Name :
+## Name : Remove First and Last Character
 
 ```js
-
+function removeChar(str) {
+  let arr = str.split("");
+  arr.pop();
+  arr.shift();
+  return arr.join("");
+}
 ```
 
-## Name :
+## Name : Square(n) Sum
 
 ```js
-
+function squareSum(numbers) {
+  let sum = 0;
+  numbers.forEach((num) => {
+    let squareNum = num ** 2;
+    sum += squareNum;
+  });
+  return sum;
+}
 ```
 
 ## Name :
