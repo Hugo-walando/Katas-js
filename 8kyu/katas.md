@@ -84,8 +84,18 @@ function squareSum(numbers) {
 }
 ```
 
-## Name :
+## Name : Find the smallest integer in the array
 
 ```js
-
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let small = args[0];
+    args.forEach((num) => {
+      if (num < small) {
+        small = num;
+      }
+    });
+    return small;
+  }
+}
 ```
