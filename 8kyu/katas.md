@@ -495,34 +495,87 @@ function countBy(x, n) {
 }
 ```
 
-## Name :
+## Name : Rock Paper Scissors!
 
 ```js
-
+const rps = (p1, p2) => {
+  if (
+    (p1 === "scissors" && p2 === "scissors") ||
+    (p1 === "paper" && p2 === "paper") ||
+    (p1 === "rock" && p2 === "rock")
+  ) {
+    return `Draw!`;
+  } else if (
+    (p1 === "scissors" && p2 === "paper") ||
+    (p1 === "paper" && p2 === "rock") ||
+    (p1 === "rock" && p2 === "scissors")
+  ) {
+    return `Player 1 won!`;
+  } else {
+    return `Player 2 won!`;
+  }
+};
 ```
 
-## Name :
+## Name : If you can't sleep, just count sheep!!
 
 ```js
-
+var countSheep = function (num) {
+  let result = "";
+  if (num > 0) {
+    for (let i = 0; i !== num; i++) {
+      result += `${i + 1} sheep...`;
+    }
+  }
+  return result;
+};
 ```
 
-## Name :
+## Name : Grasshopper - Personalized Message
 
 ```js
-
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
 ```
 
-## Name :
+## Name : Quarter of the year
 
 ```js
-
+const quarterOf = (month) => {
+  if (month <= 3) {
+    return 1;
+  } else if (month <= 6) {
+    return 2;
+  } else if (month <= 9) {
+    return 3;
+  } else {
+    return 4;
+  }
+};
 ```
 
-## Name :
+## Name : Grasshopper - Grade book
 
 ```js
-
+function getGrade(s1, s2, s3) {
+  let average = (s1 + s2 + s3) / 3;
+  if (average < 60) {
+    return "F";
+  } else if (average < 70) {
+    return "D";
+  } else if (average < 80) {
+    return "C";
+  } else if (average < 90) {
+    return "B";
+  } else if (average <= 100) {
+    return "A";
+  }
+}
 ```
 
 ## Name :
