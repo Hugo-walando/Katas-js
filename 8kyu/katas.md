@@ -99,3 +99,228 @@ class SmallestIntegerFinder {
   }
 }
 ```
+
+## Name : Grasshopper - Summation
+
+```js
+var summation = function (num) {
+  let sum = 0;
+  for (let i = num; i !== 0; i--) {
+    sum += i;
+  }
+  return sum;
+};
+```
+
+## Name : Convert a String to a Number!
+
+```js
+const stringToNumber = function (str) {
+  return +str;
+};
+```
+
+## Name : Function 1 - hello world
+
+```js
+const greet = () => {
+  return "hello world!";
+};
+```
+
+## Name : Counting sheep...
+
+```js
+function countSheeps(sheep) {
+  let sum = 0;
+  sheep.forEach((s) => {
+    if (s) sum += 1;
+  });
+  return sum;
+}
+```
+
+## Name : Remove String Spaces
+
+```js
+function noSpace(x) {
+  return x.split(" ").join("");
+}
+```
+
+## Name : You Can't Code Under Pressure #1
+
+```js
+function doubleInteger(i) {
+  i *= 2;
+  return i;
+}
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
