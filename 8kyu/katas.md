@@ -578,34 +578,61 @@ function getGrade(s1, s2, s3) {
 }
 ```
 
-## Name :
+## Name : Transportation on vacation
 
 ```js
-
+function rentalCarCost(d) {
+  if (d < 3) {
+    return 40 * d;
+  } else if (d < 7) {
+    return 40 * d - 20;
+  } else {
+    return 40 * d - 50;
+  }
+}
 ```
 
-## Name :
+## Name : Remove exclamation marks
 
 ```js
-
+function removeExclamationMarks(s) {
+  return s.replaceAll("!", "");
+}
 ```
 
-## Name :
+## Name : Total amount of points
 
 ```js
-
+function points(games) {
+  let points = 0;
+  games.forEach((score) => {
+    let arr = score.split(":");
+    if (arr[0] === arr[1]) {
+      points++;
+    } else if (arr[0] > arr[1]) {
+      points += 3;
+    }
+  });
+  return points;
+}
 ```
 
-## Name :
+## Name : Volume of a Cuboid
 
 ```js
-
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
+}
 ```
 
-## Name :
+## Name : Third Angle of a Triangle
 
 ```js
-
+function otherAngle(a, b) {
+  return 180 - (a + b);
+}
 ```
 
 ## Name :
