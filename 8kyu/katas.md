@@ -190,16 +190,25 @@ function basicOp(operation, value1, value2) {
 }
 ```
 
-## Name :
+## Name : Keep Hydrated!
 
 ```js
-
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
 ```
 
-## Name :
+## Name : Century From Year
 
 ```js
-
+function century(year) {
+  let firstDigit = (year - (year - Math.floor(year / 100) * 100)) / 100;
+  if (year - Math.floor(year / 100) * 100 === 0) {
+    return firstDigit;
+  } else {
+    return firstDigit === 1 ? firstDigit : firstDigit + 1;
+  }
+}
 ```
 
 ## Name :
