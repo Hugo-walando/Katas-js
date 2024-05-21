@@ -635,10 +635,16 @@ function otherAngle(a, b) {
 }
 ```
 
-## Name :
+## Name : Area or Perimeter
 
 ```js
-
+const areaOrPerimeter = function (l, w) {
+  if (l === w) {
+    return l * w;
+  } else {
+    return (l + w) * 2;
+  }
+};
 ```
 
 ## Name :
