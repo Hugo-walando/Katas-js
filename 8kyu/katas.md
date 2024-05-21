@@ -363,6 +363,198 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 ```
 
+## Name : Count of positives / sum of negatives
+
+```js
+function countPositivesSumNegatives(input) {
+  let positiveCount = 0;
+  let negativeSum = 0;
+  let result = [];
+  if (Array.isArray(input) && input.length) {
+    input.forEach((num) => {
+      if (num > 0) {
+        positiveCount++;
+      } else {
+        negativeSum += num;
+      }
+    });
+    result.push(positiveCount, negativeSum);
+  }
+  return result;
+}
+```
+
+## Name : Calculate BMI
+
+```js
+function bmi(weight, height) {
+  let bmi = weight / height ** 2;
+  if (bmi <= 18.5) {
+    return "Underweight";
+  } else if (bmi <= 25) {
+    return "Normal";
+  } else if (bmi <= 30) {
+    return "Overweight";
+  } else {
+    return "Obese";
+  }
+}
+```
+
+## Name : Find Maximum and Minimum Values of a List
+
+```js
+var min = function (list) {
+  return Math.min(...list);
+};
+
+var max = function (list) {
+  return Math.max(...list);
+};
+```
+
+## Name : Fake Binary
+
+```js
+function fakeBin(x) {
+  return Array.from(x)
+    .map((num) => {
+      if (num >= 5) {
+        return (num = 1);
+      } else {
+        return (num = 0);
+      }
+    })
+    .join("");
+}
+```
+
+## Name : You only need one - Beginner
+
+```js
+function check(a, x) {
+  return a.includes(x);
+}
+```
+
+## Name : DNA to RNA Conversion
+
+```js
+function DNAtoRNA(dna) {
+  let rna = Array.from(dna).map((el) => {
+    if (el === "T") {
+      return (el = "U");
+    }
+    return el;
+  });
+  return rna.join("");
+}
+```
+
+## Name : Will you make it?
+
+```js
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump <= mpg * fuelLeft ? true : false;
+};
+```
+
+## Name : Convert a string to an array
+
+```js
+function stringToArray(string) {
+  return string.split(" ");
+}
+```
+
+## Name : Reversed sequence
+
+```js
+const reverseSeq = (n) => {
+  let arr = [];
+  if (n > 0) {
+    for (let i = n; i !== 0; i--) {
+      arr.push(i);
+    }
+  }
+  return arr;
+};
+```
+
+## Name : Count by X
+
+```js
+function countBy(x, n) {
+  let arr = [];
+  let sum = 0;
+  for (let i = 0; i !== n; i++) {
+    sum += x;
+    arr.push(sum);
+  }
+  return arr;
+}
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
 ## Name :
 
 ```js
