@@ -1054,10 +1054,12 @@ function expressionMatter(a, b, c) {
 }
 ```
 
-## Name :
+## Name : Sum The Strings
 
 ```js
-
+function sumStr(a, b) {
+  return `${+a + +b}`;
+}
 ```
 
 ## Name :
