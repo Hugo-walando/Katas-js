@@ -843,58 +843,110 @@ function removeEveryOther(arr) {
 }
 ```
 
-## Name :
+## Name : Count the Monkeys!
 
 ```js
-
+function monkeyCount(n) {
+  let arr = [];
+  for (let i = 1; i !== n + 1; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 ```
 
-## Name :
+## Name : Will there be enough space?
 
 ```js
-
+function enough(cap, on, wait) {
+  if (cap < on + wait) {
+    return on + wait - cap;
+  } else {
+    return 0;
+  }
+}
 ```
 
-## Name :
+## Name : All Star Code Challenge #18
 
 ```js
-
+function strCount(str, letter) {
+  let arr = str.split("");
+  let count = 0;
+  arr.forEach((x) => {
+    if (x == letter) {
+      count++;
+    }
+  });
+  return count;
+}
 ```
 
-## Name :
+## Name : Grasshopper - Terminal game move function
 
 ```js
-
+function move(position, roll) {
+  return position + roll * 2;
+}
 ```
 
-## Name :
+## Name : What is between?
 
 ```js
-
+function between(a, b) {
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 ```
 
-## Name :
+## Name : Grasshopper - Debug sayHello
 
 ```js
-
+function sayHello(name) {
+  return `Hello, ${name}`;
+}
 ```
 
-## Name :
+## Name : Find the first non-consecutive number
 
 ```js
-
+function firstNonConsecutive(arr) {
+  let prevValue = arr[0];
+  for (let i = 1; i !== arr.length; i++) {
+    if (arr[i] !== prevValue + 1) {
+      return arr[i];
+    }
+    prevValue++;
+  }
+  return null;
+}
 ```
 
-## Name :
+## Name : Is it even?
 
 ```js
-
+function testEven(n) {
+  return n % 2 === 0;
+}
 ```
 
-## Name :
+## Name : Is the string uppercase?
 
 ```js
-
+String.prototype.isUpperCase = function () {
+  let a = this.split("");
+  console.log(a);
+  for (const x of a) {
+    console.log(x);
+    if (x !== x.toUpperCase()) {
+      return false;
+    }
+  }
+  return true;
+};
 ```
 
 ## Name :
