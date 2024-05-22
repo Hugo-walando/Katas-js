@@ -949,40 +949,109 @@ String.prototype.isUpperCase = function () {
 };
 ```
 
-## Name :
+## Name : Cat years, Dog years
 
 ```js
+var humanYearsCatYearsDogYears = function (humanYears) {
+  let catYears = 0;
+  let dogYears = 0;
 
+  for (let i = 0; i !== humanYears + 1; i++) {
+    if (i == 1) {
+      catYears += 15;
+      dogYears += 15;
+    }
+    if (i == 2) {
+      catYears += 9;
+      dogYears += 9;
+    }
+    if (i > 2) {
+      catYears += 4;
+      dogYears += 5;
+    }
+  }
+  return [humanYears, catYears, dogYears];
+};
 ```
 
-## Name :
+## Name : altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 
 ```js
-
+String.prototype.toAlternatingCase = function () {
+  let arr = this.split("");
+  arr = arr.map((x) => {
+    return x == x.toUpperCase() ? x.toLowerCase() : x.toUpperCase();
+  });
+  return arr.join("");
+};
 ```
 
-## Name :
+## Name : Correct the mistakes of the character recognition software
 
 ```js
-
+function correct(string) {
+  let arr = string.split("");
+  arr = arr.map((x) => {
+    if (x === "5") {
+      return (x = "S");
+    } else if (x === "1") {
+      return (x = "I");
+    } else if (x === "0") {
+      return (x = "O");
+    }
+    return x;
+  });
+  return arr.join("");
+}
 ```
 
-## Name :
+## Name : Is it a palindrome?
 
 ```js
-
+function isPalindrome(x) {
+  let arr = x.split("");
+  if (x == "") {
+    return true;
+  }
+  for (const [index, value] of arr.entries()) {
+    if (value.toUpperCase() != arr[arr.length - index - 1].toUpperCase()) {
+      return false;
+    }
+    return true;
+  }
+}
 ```
 
-## Name :
+## Name : Student's Final Grade
 
 ```js
-
+function finalGrade(exam, projects) {
+  if (exam > 90 || projects > 10) {
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    return 75;
+  } else {
+    return 0;
+  }
+}
 ```
 
-## Name :
+## Name : Expressions Matter
 
 ```js
-
+function expressionMatter(a, b, c) {
+  let A = a * b * c;
+  let B = a + b * c;
+  let C = a * b + c;
+  let D = a + b + c;
+  let E = a * b * c;
+  let F = a * (b * c);
+  let G = (a + b) * c;
+  let H = a * (b + c);
+  return Math.max(A, B, C, D, E, F, G, H);
+}
 ```
 
 ## Name :
