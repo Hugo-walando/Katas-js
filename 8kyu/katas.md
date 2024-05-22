@@ -698,22 +698,34 @@ function sumArray(array) {
 }
 ```
 
-## Name :
+## Name : Sum Mixed Array
 
 ```js
-
+function sumMix(x) {
+  return x.reduce((a, b) => +a + +b, 0);
+}
 ```
 
-## Name :
+## Name : Grasshopper - Messi goals function
 
 ```js
-
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 ```
 
-## Name :
+## Name : Double Char
 
 ```js
-
+function doubleChar(str) {
+  let arr = str.split("");
+  let newArray = [];
+  arr.forEach((char) => {
+    newArray.push(char);
+    newArray.push(char);
+  });
+  return newArray.join("");
+}
 ```
 
 ## Name :
