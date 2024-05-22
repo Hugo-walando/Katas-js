@@ -756,40 +756,91 @@ function getAge(inputString) {
 }
 ```
 
-## Name :
+## Name : Grasshopper - Check for factor
 
 ```js
-
+function checkForFactor(base, factor) {
+  return base % factor === 0;
+}
 ```
 
-## Name :
+## Name : Switch it Up!
 
 ```js
-
+function switchItUp(number) {
+  switch (number) {
+    case 0:
+      return "Zero";
+    case 1:
+      return "One";
+    case 2:
+      return "Two";
+    case 3:
+      return "Three";
+    case 4:
+      return "Four";
+    case 5:
+      return "Five";
+    case 6:
+      return "Six";
+    case 7:
+      return "Seven";
+    case 8:
+      return "Eight";
+    case 9:
+      return "Nine";
+  }
+}
 ```
 
-## Name :
+## Name : Function 2 - squaring an argument
 
 ```js
-
+const square = (x) => {
+  return x ** 2;
+};
 ```
 
-## Name :
+## Name : Keep up the hoop
 
 ```js
-
+function hoopCount(n) {
+  return n >= 10
+    ? "Great, now move on to tricks"
+    : "Keep at it until you get it";
+}
 ```
 
-## Name :
+## Name : Twice as old
 
 ```js
-
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let years = 0;
+  if (dadYearsOld > sonYearsOld * 2) {
+    while (sonYearsOld * 2 !== dadYearsOld) {
+      dadYearsOld++;
+      sonYearsOld++;
+      years++;
+    }
+  } else {
+    while (sonYearsOld * 2 !== dadYearsOld) {
+      dadYearsOld--;
+      sonYearsOld--;
+      years++;
+    }
+  }
+  return years;
+}
 ```
 
-## Name :
+## Name : Removing Elements
 
 ```js
-
+function removeEveryOther(arr) {
+  return arr.filter((x, index) => {
+    return index % 2 === 0;
+  });
+}
 ```
 
 ## Name :
