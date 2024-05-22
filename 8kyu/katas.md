@@ -728,6 +728,292 @@ function doubleChar(str) {
 }
 ```
 
+## Name : The Feast of Many Beasts
+
+```js
+function feast(beast, dish) {
+  if (beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
+
+## Name : Array plus array
+
+```js
+function arrayPlusArray(arr1, arr2) {
+  return arr1.reduce((a, b) => a + b, 0) + arr2.reduce((a, b) => a + b, 0);
+}
+```
+
+## Name : Parse nice int from char problem
+
+```js
+function getAge(inputString) {
+  return +inputString[0];
+}
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
 ## Name :
 
 ```js
