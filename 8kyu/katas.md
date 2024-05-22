@@ -1062,52 +1062,140 @@ function sumStr(a, b) {
 }
 ```
 
-## Name :
+## Name : Difference of Volumes of Cuboids
 
 ```js
+function findDifference(a, b) {
+  let volume1 = a[0];
+  let volume2 = b[0];
 
+  for (let i = 1; i !== a.length; i++) {
+    volume1 *= a[i];
+  }
+
+  for (let i = 1; i !== b.length; i++) {
+    volume2 *= b[i];
+  }
+  return volume2 > volume1 ? volume2 - volume1 : volume1 - volume2;
+}
+```
+
+## Name : I love you, a little , a lot, passionately ... not at all
+
+```js
+function howMuchILoveYou(nbPetals) {
+  let arr = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+  let str = "";
+  let j = "";
+  console.log(nbPetals);
+  arr.forEach((x, index) => {});
+  for (let i = 0; i !== nbPetals; i++) {
+    if (i > 5) {
+      j = i % 6;
+      str = arr[j];
+    } else {
+      str = arr[i];
+    }
+    console.log(str);
+  }
+  return str;
+}
+```
+
+## Name : Reverse List Order
+
+```js
+function reverseList(list) {
+  return list.reverse();
+}
+```
+
+## Name : Grasshopper - Messi Goals
+
+```js
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+```
+
+## Name : Welcome!
+
+```js
+function greet(language) {
+  const obj = {
+    english: "Welcome",
+    czech: "Vitejte",
+    danish: "Velkomst",
+    dutch: "Welkom",
+    estonian: "Tere tulemast",
+    finnish: "Tervetuloa",
+    flemish: "Welgekomen",
+    french: "Bienvenue",
+    german: "Willkommen",
+    irish: "Failte",
+    italian: "Benvenuto",
+    latvian: "Gaidits",
+    lithuanian: "Laukiamas",
+    polish: "Witamy",
+    spanish: "Bienvenido",
+    swedish: "Valkommen",
+    welsh: "Croeso",
+  };
+  let msg = obj[language];
+  if (msg == undefined) {
+    msg = "Welcome";
+  }
+  console.log(msg);
+  return msg;
+}
+```
+
+## Name : Sort and Star
+
+```js
+function twoSort(s) {
+  let sorted = s.sort();
+  return sorted[0].split("").join("***");
+}
+```
+
+## Name : Find Multiples of a Number
+
+```js
+function findMultiples(integer, limit) {
+  let arr = [];
+  let count = 0;
+  while (count + integer <= limit) {
+    count += integer;
+    arr.push(count);
+  }
+  return arr;
+}
 ```
 
 ## Name :
 
 ```js
-
-```
-
-## Name :
-
-```js
-
-```
-
-## Name :
-
-```js
-
-```
-
-## Name :
-
-```js
-
-```
-
-## Name :
-
-```js
-
-```
-
-## Name :
-
-```js
-
-```
-
-## Name :
-
-```js
-
+function peopleWithAgeDrink(old) {
+  if (old < 14) {
+    return "drink toddy";
+  } else if (old < 18) {
+    return "drink coke";
+  } else if (old < 21) {
+    return "drink beer";
+  } else {
+    return "drink whisky";
+  }
+}
 ```
 
 ## Name :
