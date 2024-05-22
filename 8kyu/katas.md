@@ -647,22 +647,55 @@ const areaOrPerimeter = function (l, w) {
 };
 ```
 
-## Name :
+## Name : Thinkful - Logic Drills: Traffic light
 
 ```js
-
+function updateLight(current) {
+  if (current === "green") {
+    return "yellow";
+  } else if (current === "yellow") {
+    return "red";
+  }
+  return "green";
+}
 ```
 
-## Name :
+## Name : L1: Set Alarm
 
 ```js
-
+function setAlarm(employed, vacation) {
+  if (employed && !vacation) {
+    return true;
+  }
+  return false;
+}
 ```
 
-## Name :
+## Name : Sum without highest and lowest number
 
 ```js
-
+function sumArray(array) {
+  let sum = 0;
+  let minFound = false;
+  let maxFound = false;
+  if (array) {
+    const newArray = array.filter((item) => {
+      if (item === Math.min(...array) && !minFound) {
+        minFound = true;
+        return false; // Ne pas inclure la première occurrence de `min`
+      }
+      if (item === Math.max(...array) && !maxFound) {
+        maxFound = true;
+        return false; // Ne pas inclure la première occurrence de `min`
+      }
+      return true;
+      return item !== Math.min(...array) && item !== Math.max(...array);
+    });
+    console.log(newArray);
+    sum = newArray.reduce((a, b) => a + b, 0);
+  }
+  return sum;
+}
 ```
 
 ## Name :
