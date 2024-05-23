@@ -1361,6 +1361,498 @@ function well(x) {
 }
 ```
 
+## Name : Super Duper Easy
+
+```js
+function problem(x) {
+  if (typeof x === "number") {
+    return x * 50 + 6;
+  } else {
+    return "Error";
+  }
+}
+```
+
+## Name : 5 without numbers !!
+
+```js
+function unusualFive() {
+  return "foooo".length;
+}
+```
+
+## Name : Regular Ball Super Ball
+
+```js
+class Ball {
+  constructor(ballType = "regular") {
+    this.ballType = ballType;
+  }
+}
+```
+
+## Name : A wolf in sheep's clothing
+
+```js
+function warnTheSheep(queue) {
+  for (let i = 0; i < queue.length; i++) {
+    if (queue[i] === "wolf") {
+      if (queue[i + 1] === "sheep") {
+        return `Oi! Sheep number ${
+          queue.length - (i + 1)
+        }! You are about to be eaten by a wolf!`;
+      } else {
+        return "Pls go away and stop eating my sheep";
+      }
+    }
+  }
+}
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
 ## Name :
 
 ```js
