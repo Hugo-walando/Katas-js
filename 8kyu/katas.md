@@ -1463,34 +1463,53 @@ function addLength(str) {
 }
 ```
 
-## Name :
+## Name : Convert to Binary
 
 ```js
-
+function toBinary(n) {
+  return Number(n.toString(2));
+}
 ```
 
-## Name :
+## Name : Bin to Decimal
 
 ```js
-
+function binToDec(bin) {
+  return parseInt(bin, 2);
+}
 ```
 
-## Name :
+## Name : The 'if' function
 
 ```js
-
+function _if(bool, func1, func2) {
+  if (bool) {
+    func1();
+  } else {
+    func2();
+  }
+}
 ```
 
-## Name :
+## Name : Hello, Name or World!
 
 ```js
-
+function hello(name) {
+  if (name) {
+    name = name.toLowerCase();
+    return `Hello, ${name.charAt(0).toUpperCase()}${name.slice(1)}!`;
+  } else {
+    return "Hello, World!";
+  }
+}
 ```
 
-## Name :
+## Name : Grasshopper - Terminal game combat function
 
 ```js
-
+function combat(health, damage) {
+  return health - damage < 0 ? 0 : health - damage;
+}
 ```
 
 ## Name :
