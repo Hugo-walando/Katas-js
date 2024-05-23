@@ -1512,64 +1512,113 @@ function combat(health, damage) {
 }
 ```
 
-## Name :
+## Name : Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
 
 ```js
-
+function replace(s) {
+  return s.replace(/[aeiouAEIOU]/g, "!");
+}
 ```
 
-## Name :
+## Name : Holiday VIII - Duty Free
 
 ```js
-
+function dutyFree(normPrice, discount, hol) {
+  let newPrice = (normPrice * discount) / 100;
+  return Math.floor(hol / newPrice);
+}
 ```
 
-## Name :
+## Name : Grasshopper - Function syntax debugging
 
 ```js
-
+function main(verb, noun) {
+  return verb + noun;
+}
 ```
 
-## Name :
+## Name : Hex to Decimal
 
 ```js
-
+function hexToDec(hexString) {
+  return parseInt(hexString, 16);
+}
 ```
 
-## Name :
+## Name : Welcome to the City
 
 ```js
-
+function sayHello(name, city, state) {
+  let fullname = "";
+  name.forEach((el) => {
+    fullname += ` ${el}`;
+  });
+  return `Hello,${fullname}! Welcome to ${city}, ${state}!`;
+}
 ```
 
-## Name :
+## Name : Enumerable Magic #25 - Take the First N Elements
 
 ```js
-
+function take(arr, n) {
+  let firstItems = [];
+  if (arr.length !== 0) {
+    for (let i = 0; i < n; i++) {
+      if (i < arr.length) {
+        firstItems.push(arr[i]);
+      } else {
+        break;
+      }
+    }
+  }
+  return firstItems;
+}
 ```
 
-## Name :
+## Name : Find the Remainder
 
 ```js
-
+function remainder(n, m) {
+  if (m === 0 && n > 0) {
+    return NaN;
+  }
+  return n > m ? n % m : m % n;
+}
 ```
 
-## Name :
+## Name : Surface Area and Volume of a Box
 
 ```js
-
+function getSize(width, height, depth) {
+  let arr = [];
+  arr[0] = (width * height + width * depth + depth * height) * 2;
+  arr[1] = width * height * depth;
+  return arr;
+}
 ```
 
-## Name :
+## Name : Find the position!
 
 ```js
-
+function position(letter) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`;
+}
 ```
 
-## Name :
+## Name : Pillars
 
 ```js
+function pillars(numPill, dist, width) {
+  let pillarsWidth = (numPill - 2) * width;
+  let distanceTotal = dist * (numPill - 1) * 100;
 
+  if (numPill > 1) {
+    return pillarsWidth + distanceTotal;
+  } else {
+    return 0;
+  }
+}
 ```
 
 ## Name :
