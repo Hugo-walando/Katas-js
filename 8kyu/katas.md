@@ -1182,7 +1182,7 @@ function findMultiples(integer, limit) {
 }
 ```
 
-## Name :
+## Name : Drink about
 
 ```js
 function peopleWithAgeDrink(old) {
@@ -1198,88 +1198,167 @@ function peopleWithAgeDrink(old) {
 }
 ```
 
-## Name :
+## Name : Vowel remover
 
 ```js
-
+function shortcut(string) {
+  let arr = string.split("");
+  arr = arr.filter(
+    (x) => x !== "a" && x !== "e" && x !== "i" && x !== "o" && x !== "u"
+  );
+  return arr.join("");
+}
 ```
 
-## Name :
+## Name : Filter out the geese
 
 ```js
-
+function gooseFilter(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter((bird) => !geese.includes(bird));
+}
 ```
 
-## Name :
+## Name : What's the real floor?
 
 ```js
-
+function getRealFloor(n) {
+  if (n == 0) {
+    return 0;
+  } else if (n < 13 && n > 0) {
+    n -= 1;
+  } else if (n > 13) {
+    n -= 2;
+  }
+  return n;
+}
 ```
 
-## Name :
+## Name : get character from ASCII Value
 
 ```js
-
+function getChar(c) {
+  return String.fromCharCode(c);
+}
 ```
 
-## Name :
+## Name : Name Shuffler
 
 ```js
-
+function nameShuffler(str) {
+  let arr = str.split(" ");
+  let temp = arr[0];
+  arr[0] = arr[1];
+  arr[1] = temp;
+  return arr.join(" ");
+}
 ```
 
-## Name :
+## Name : Training JS #7: if..else and ternary operator
 
 ```js
-
+function saleHotdogs(n) {
+  if (n < 5) {
+    return 100 * n;
+  } else if (n >= 5 && n < 10) {
+    return 95 * n;
+  } else {
+    return 90 * n;
+  }
+}
 ```
 
-## Name :
+## Name : Exclusive "or" (xor) Logical Operator
 
 ```js
-
+function xor(a, b) {
+  if (a && b) {
+    return false;
+  } else if (a || b) {
+    return true;
+  } else {
+    return false;
+  }
+}
 ```
 
-## Name :
+## Name : Plural
 
 ```js
-
+function plural(n) {
+  return n !== 1;
+}
 ```
 
-## Name :
+## Name : Lario and Muigi Pipe Problem
 
 ```js
-
+function pipeFix(numbers) {
+  let arr = [];
+  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 ```
 
-## Name :
+## Name : How many lightsabers do you own?
 
 ```js
-
+function howManyLightsabersDoYouOwn(name) {
+  return name === "Zach" ? 18 : 0;
+}
 ```
 
-## Name :
+## Name : Grasshopper - Basic Function Fixer
 
 ```js
-
+function addFive(num) {
+  var total = num + 5;
+  return total;
+}
 ```
 
-## Name :
+## Name : Training JS #1: create your first JS function and print "Hello World!"
 
 ```js
-
+const helloWorld = () => {
+  let str = "Hello World!";
+  console.log(str);
+  return str;
+};
 ```
 
-## Name :
+## Name : Multiplication table for number
 
 ```js
-
+function multiTable(number) {
+  let arr = [];
+  for (let i = 1; i <= 10; i++) {
+    arr.push(`${i} * ${number} = ${i * number}`);
+  }
+  return arr.join("\n");
+}
 ```
 
-## Name :
+## Name : Well of Ideas - Easy Version
 
 ```js
-
+function well(x) {
+  let goodCount = 0;
+  x.forEach((x) => {
+    if (x === "good") {
+      goodCount++;
+    }
+  });
+  if (goodCount <= 2 && goodCount >= 1) {
+    return "Publish!";
+  } else if (goodCount === 0) {
+    return "Fail!";
+  } else {
+    return "I smell a series!";
+  }
+}
 ```
 
 ## Name :
