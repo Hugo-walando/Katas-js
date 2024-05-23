@@ -1409,34 +1409,58 @@ function warnTheSheep(queue) {
 }
 ```
 
-## Name :
+## Name : Merge two sorted arrays into one
 
 ```js
-
+function mergeArrays(arr1, arr2) {
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
+        arr2.splice(j, 1);
+      }
+    }
+  }
+  let arr = arr1.concat(arr2);
+  return arr.sort((a, b) => {
+    return a - b;
+  });
+}
 ```
 
-## Name :
+## Name : Remove duplicates from list
 
 ```js
-
+function distinct(a) {
+  return a.filter((el, index) => a.indexOf(el) === index);
+}
 ```
 
-## Name :
+## Name : Determine offspring sex based on genes XX and XY chromosomes
 
 ```js
-
+function chromosomeCheck(sperm) {
+  return sperm.split("").includes("Y")
+    ? "Congratulations! You're going to have a son."
+    : "Congratulations! You're going to have a daughter.";
+}
 ```
 
-## Name :
+## Name : The Wide-Mouthed frog!
 
 ```js
-
+function mouthSize(animal) {
+  return animal.toUpperCase() === "ALLIGATOR" ? "small" : "wide";
+}
 ```
 
-## Name :
+## Name : Add Length
 
 ```js
-
+function addLength(str) {
+  return str.split(" ").map((x) => {
+    return `${x} ${x.length}`;
+  });
+}
 ```
 
 ## Name :
