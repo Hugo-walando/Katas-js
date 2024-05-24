@@ -1828,28 +1828,59 @@ function swapValues(args) {
 }
 ```
 
-## Name :
+## Name : Sum of Multiples
 
 ```js
-
+function sumMul(n, m) {
+  let count = 0;
+  if (n > 0 && m > 0) {
+    for (let i = 0; i < m; i += n) {
+      count += i;
+    }
+    return count;
+  }
+  return "INVALID";
+}
 ```
 
-## Name :
+## Name : Training JS #5: Basic data types--Object
 
 ```js
-
+function animal(obj) {
+  let animal = {
+    name: obj.name,
+    legs: obj.legs,
+    color: obj.color,
+  };
+  return `This ${animal.color} ${animal.name} has ${animal.legs} legs.`;
+}
 ```
 
-## Name :
+## Name : Multiple of index
 
 ```js
-
+function multipleOfIndex(array) {
+  let newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i], i);
+    console.log(array[i] % i);
+    if (array[i] % i === 0 || array[i] === 0) {
+      newArray.push(array[i]);
+    }
+    console.log(newArray);
+  }
+  return newArray;
+}
 ```
 
-## Name :
+## Name : Sleigh Authentication
 
 ```js
+function Sleigh() {}
 
+Sleigh.prototype.authenticate = function (name, password) {
+  return name === "Santa Claus" && password === "Ho Ho Ho!" ? true : false;
+};
 ```
 
 ## Name :
