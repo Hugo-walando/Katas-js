@@ -2266,22 +2266,51 @@ function rainAmount(mm) {
 }
 ```
 
-## Name :
+## Name : Training JS #8: Conditional statement--switch
 
 ```js
-
+function howManydays(month) {
+  var days;
+  switch (month) {
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      days = 30;
+      break;
+    case 2:
+      days = 28;
+      break;
+    default:
+      days = 31;
+  }
+  return days;
+}
 ```
 
-## Name :
+## Name : Exclamation marks series #2: Remove all exclamation marks from the end of sentence
 
 ```js
-
+function remove(string) {
+  let arr = string.split("");
+  for (let i = arr.length - 1; i > 0; i--) {
+    if (arr[i] === "!") {
+      arr.splice(i, 1);
+    } else {
+      return arr.join("");
+    }
+  }
+}
 ```
 
-## Name :
+## Name : Classic Hello World
 
 ```js
-
+class Solution {
+  static main() {
+    console.log("Hello World!");
+  }
+}
 ```
 
 ## Name :
