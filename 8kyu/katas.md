@@ -2313,6 +2313,454 @@ class Solution {
 }
 ```
 
+## Name : Classy Classes
+
+```js
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  get info() {
+    return `${this.name}s age is ${this.age}`;
+  }
+}
+```
+
+## Name : Regexp Basics - is it a digit?
+
+```js
+String.prototype.digit = function () {
+  return /^[0-9]{1}$/g.test(this);
+};
+```
+
+## Name :
+
+Contamination #1 -String-
+
+```js
+function contamination(text, char) {
+  let arr = text.split("");
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = char;
+  }
+  return arr.join("");
+}
+```
+
+## Name : Pythagorean Triple
+
+```js
+function isPythagoreanTriple(integers) {
+  integers.sort((a, b) => a - b);
+  return integers[0] ** 2 + integers[1] ** 2 === integers[2] ** 2;
+}
+```
+
+## Name : Is it a number?
+
+```js
+function isDigit(s) {
+  let num = Math.abs(s);
+  console.log(NaN);
+  console.log(num == NaN);
+  return typeof num === "number" && !isNaN(num) && s.trim() !== "";
+}
+```
+
+## Name : Leonardo Dicaprio and Oscars
+
+```js
+function leo(oscar) {
+  if (oscar === 88) {
+    return "Leo finally won the oscar! Leo is happy";
+  } else if (oscar === 86) {
+    return "Not even for Wolf of wallstreet?!";
+  } else if (oscar < 88) {
+    return "When will you give Leo an Oscar?";
+  } else {
+    return "Leo got one already!";
+  }
+}
+```
+
+## Name : Training JS #6: Basic data types--Boolean and conditional statements if..else
+
+```js
+function trueOrFalse(val) {
+  return val ? "true" : "false";
+}
+```
+
+## Name : Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+
+```js
+function remove(s, n) {
+  let count = 0;
+  let arr = s.split("");
+
+  for (let i = 0; i < arr.length; i++) {
+    if (count < n && arr[i] === "!") {
+      arr.splice(i, 1);
+      count++;
+      i--;
+    }
+  }
+
+  return arr.join("");
+}
+```
+
+## Name : get ascii value of character
+
+```js
+function getASCII(c) {
+  return c.charCodeAt(0);
+}
+```
+
+## Name : Quadrants
+
+```js
+function quadrant(x, y) {
+  if (x > 0 && y > 0) {
+    return 1;
+  } else if (x > 0 && y < 0) {
+    return 4;
+  } else if (x < 0 && y > 0) {
+    return 2;
+  } else {
+    return 3;
+  }
+}
+```
+
+## Name : Smallest unused ID
+
+```js
+function nextId(ids) {
+  let arr = ids.sort((a, b) => a - b);
+  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[0] !== 0) return 0;
+    if (arr[i + 1] !== arr[i] + 1 && arr[i] !== arr[i + 1]) {
+      return arr[i] + 1;
+    }
+  }
+  return arr.lenght + 1;
+}
+```
+
+## Name : Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+
+```js
+function remove(string) {
+  return string.replaceAll("!", "") + "!";
+}
+```
+
+## Name : A Strange Trip to the Market
+
+```js
+function isLockNessMonster(s) {
+  return s.includes("tree fiddy") ||
+    s.includes("3.50") ||
+    s.includes("three fifty")
+    ? true
+    : false;
+}
+```
+
+## Name : Compare within margin
+
+```js
+function closeCompare(a, b, margin = 0) {
+  if (a > b) {
+    if (a - b <= margin) {
+      return 0;
+    }
+    return 1;
+  } else {
+    if (b - a <= margin) {
+      return 0;
+    }
+    return -1;
+  }
+}
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
+## Name :
+
+```js
+
+```
+
 ## Name :
 
 ```js
