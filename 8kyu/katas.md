@@ -1997,118 +1997,253 @@ function calculateAge(a, b) {
 }
 ```
 
-## Name :
+## Name : Return the day
 
 ```js
-
+function whatday(num) {
+  if (num >= 1 && num <= 7) {
+    switch (num) {
+      case 1:
+        return "Sunday";
+      case 2:
+        return "Monday";
+      case 3:
+        return "Tuesday";
+      case 4:
+        return "Wednesday";
+      case 5:
+        return "Thursday";
+      case 6:
+        return "Friday";
+      case 7:
+        return "Saturday";
+    }
+  }
+  return "Wrong, please enter a number between 1 and 7";
+}
 ```
 
-## Name :
+## Name : Basic Training: Add item to an Array
 
 ```js
-
+websites.push("codewars");
 ```
 
-## Name :
+## Name : Training JS #4: Basic data types--Array
 
 ```js
-
+function getLength(arr) {
+  return arr.length;
+}
+function getFirst(arr) {
+  return arr[0];
+}
+function getLast(arr) {
+  return arr[arr.length - 1];
+}
+function pushElement(arr) {
+  var el = 1;
+  arr.push(el);
+  return arr;
+}
+function popElement(arr) {
+  arr.pop();
+  return arr;
+}
 ```
 
-## Name :
+## Name : Regex count lowercase letters
 
 ```js
-
+function lowercaseCount(str) {
+  let regex = /[a-z]/g;
+  let arr = [];
+  arr = str.match(regex);
+  if (arr !== null && arr.length > 0) {
+    return arr.length;
+  }
+  return 0;
+}
 ```
 
-## Name :
+## Name : Grasshopper - Combine strings
 
 ```js
-
+const combineNames = (first, last) => {
+  return `${first} ${last}`;
+};
 ```
 
-## Name :
+## Name : USD => CNY
 
 ```js
-
+function usdcny(usd) {
+  return `${(Math.round(usd * 6.75 * 100) / 100).toFixed(2)} Chinese Yuan`;
+}
 ```
 
-## Name :
+## Name : Formatting decimal places #0
 
 ```js
-
+function twoDecimalPlaces(n) {
+  return Math.round(n * 100) / 100;
+}
 ```
 
-## Name :
+## Name : Area of a Square
 
 ```js
-
+function squareArea(A) {
+  return Number(Math.pow((A * 4) / (Math.PI * 2), 2).toFixed(2));
+}
 ```
 
-## Name :
+## Name : OOP: Object Oriented Piracy
 
 ```js
+class Ship {
+  constructor(draft, crew) {
+    this.draft = draft;
+    this.crew = crew;
+  }
 
+  isWorthIt() {
+    return this.draft - this.crew * 1.5 > 20 ? true : false;
+  }
+}
 ```
 
-## Name :
+## Name : Multiply the number
 
 ```js
-
+function multiply(number) {
+  let numStr = Math.abs(number).toString();
+  let expo = numStr.length;
+  return number * 5 ** expo;
+}
 ```
 
-## Name :
+## Name : How many stairs will Suzuki climb in 20 years?
 
 ```js
-
+function stairsIn20(s) {
+  let estimate = 0;
+  for (let i = 0; i < s.length; i++) {
+    for (let j = 0; j < s[i].length; j++) {
+      estimate += s[i][j];
+    }
+  }
+  return estimate * 20;
+}
 ```
 
-## Name :
+## Name : Color Ghost
 
 ```js
-
+class Ghost {
+  constructor() {
+    const colors = ["white", "yellow", "purple", "red"];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+  }
+}
 ```
 
-## Name :
+## Name : Name on billboard
 
 ```js
-
+function billboard(name, price = 30) {
+  let total = 0;
+  name.split("").forEach((x) => {
+    total += price;
+  });
+  return total;
+}
 ```
 
-## Name :
+## Name : Define a card suit
 
 ```js
-
+function defineSuit(card) {
+  let arr = card.split("");
+  for (let x of arr) {
+    console.log(x);
+    switch (x) {
+      case "♣":
+        return "clubs";
+      case "♦":
+        return "diamonds";
+      case "♥":
+        return "hearts";
+      case "♠":
+        return "spades";
+    }
+  }
+}
 ```
 
-## Name :
+## Name : Basic subclasses - Adam and Eve
 
 ```js
+class God {
+  static create() {
+    const adam = new Man("Adam");
+    const eve = new Woman("Eve");
+    return [adam, eve];
+  }
+}
 
+class Human {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Man extends Human {
+  constructor(name) {
+    super(name);
+  }
+}
+
+class Woman extends Human {
+  constructor(name) {
+    super(name);
+  }
+}
 ```
 
-## Name :
+## Name : Type of sum
 
 ```js
-
+function typeOfSum(a, b) {
+  return typeof (a + b);
+}
 ```
 
-## Name :
+## Name : Do you speak "English"?
 
 ```js
-
+function spEng(sentence) {
+  return sentence.toLowerCase().includes("english");
+}
 ```
 
-## Name :
+## Name : Holiday VI - Shark Pontoon
 
 ```js
-
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+  return pontoonDistance / youSpeed <
+    sharkDistance / (dolphin ? sharkSpeed / 2 : sharkSpeed)
+    ? "Alive!"
+    : "Shark Bait!";
+}
 ```
 
-## Name :
+## Name : Remove the time
 
 ```js
-
+function shortenToDate(longDate) {
+  return longDate.split(",").shift();
+}
 ```
 
 ## Name :
