@@ -2246,16 +2246,24 @@ function shortenToDate(longDate) {
 }
 ```
 
-## Name :
+## Name : No Loops 2 - You only need one
 
 ```js
-
+function check(a, x) {
+  return a.includes(x);
+}
 ```
 
-## Name :
+## Name : Fix your code before the garden dies
 
 ```js
-
+function rainAmount(mm) {
+  if (mm < 40) {
+    return `You need to give your plant ${40 - mm}mm of water`;
+  } else {
+    return "Your plant has had more than enough water for today!";
+  }
+}
 ```
 
 ## Name :
