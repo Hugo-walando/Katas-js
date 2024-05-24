@@ -1883,40 +1883,118 @@ Sleigh.prototype.authenticate = function (name, password) {
 };
 ```
 
-## Name :
+## Name : Fundamentals: Return
 
 ```js
+function add(a, b) {
+  return a + b;
+}
 
+function divide(a, b) {
+  return a / b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function mod(a, b) {
+  return a % b;
+}
+
+function exponent(a, b) {
+  return a ** b;
+}
+
+function subt(a, b) {
+  return a - b;
+}
 ```
 
-## Name :
+## Name : Take the Derivative
 
 ```js
-
+function derive(coefficient, exponent) {
+  return `${coefficient * exponent}x^${exponent - 1}`;
+}
 ```
 
-## Name :
+## Name : Find Nearest square number
 
 ```js
+function nearestSq(n) {
+  // Calculer la racine carrée de n
+  const sqrt = Math.sqrt(n);
 
+  // Trouver les entiers les plus proches de la racine carrée
+  const lower = Math.floor(sqrt);
+  const upper = Math.ceil(sqrt);
+
+  // Calculer les carrés de ces entiers
+  const lowerSq = lower * lower;
+  const upperSq = upper * upper;
+
+  // Comparer les carrés avec n et retourner le plus proche
+  if (Math.abs(n - lowerSq) <= Math.abs(n - upperSq)) {
+    return lowerSq;
+  } else {
+    return upperSq;
+  }
+}
 ```
 
-## Name :
+## Name : Kata Example Twist
 
 ```js
-
+let websites = [];
+for (let i = 0; i < 1000; i++) {
+  websites.push("codewars");
+}
 ```
 
-## Name :
+## Name : L1: Bartender, drinks!
 
 ```js
-
+function getDrinkByProfession(param) {
+  param = param.toLowerCase();
+  switch (param) {
+    case "jabroni":
+      return "Patron Tequila";
+    case "school counselor":
+      return "Anything with Alcohol";
+    case "programmer":
+      return "Hipster Craft Beer";
+    case "bike gang member":
+      return "Moonshine";
+    case "politician":
+      return "Your tax dollars";
+    case "rapper":
+      return "Cristal";
+    default:
+      return "Beer";
+  }
+}
 ```
 
-## Name :
+## Name : How old will I be in 2099?
 
 ```js
-
+function calculateAge(a, b) {
+  if (a - b === 0) {
+    return "You were born this very year!";
+  }
+  if (a > b) {
+    if (a - b === 1) {
+      return `You will be born in ${1} year.`;
+    }
+    return `You will be born in ${a - b} years.`;
+  } else {
+    if (b - a === 1) {
+      return `You are ${1} year old.`;
+    }
+    return `You are ${b - a} years old.`;
+  }
+}
 ```
 
 ## Name :
