@@ -1621,94 +1621,211 @@ function pillars(numPill, dist, width) {
 }
 ```
 
-## Name :
+## Name : Price of Mangoes
 
 ```js
-
+function mango(quantity, price) {
+  let freeMangos = Math.floor(quantity / 3);
+  return (quantity - freeMangos) * price;
+}
 ```
 
-## Name :
+## Name : 101 Dalmatians - squash the bugs, not the dogs!
 
 ```js
+function howManyDalmatians(number) {
+  let dogs = [
+    "Hardly any",
+    "More than a handful!",
+    "Woah that's a lot of dogs!",
+    "101 DALMATIANS!!!",
+  ];
 
+  let respond =
+    number <= 10
+      ? dogs[0]
+      : number <= 50
+      ? dogs[1]
+      : number >= 101
+      ? dogs[3]
+      : dogs[2];
+
+  return respond;
+}
 ```
 
-## Name :
+## Name : Alan Partridge II - Apple Turnover
 
 ```js
-
+function apple(x) {
+  return Number(x) ** 2 > 1000
+    ? "It's hotter than the sun!!"
+    : "Help yourself to a honeycomb Yorkie for the glovebox.";
+}
 ```
 
-## Name :
+## Name : Find out whether the shape is a cube
 
 ```js
-
+function cubeChecker(volume, side) {
+  if (volume > 0 && side > 0) {
+    return side ** 3 === volume ? true : false;
+  }
+  return false;
+}
 ```
 
-## Name :
+## Name : Training JS #2: Basic data types--Number
 
 ```js
+let v1 = 50,
+  v2 = 100,
+  v3 = 150,
+  v4 = 200,
+  v5 = 2,
+  v6 = 250;
 
+function equal1() {
+  let a = v1;
+  let b = v1;
+  return a + b;
+}
+
+//Please refer to the example above to complete the following functions
+function equal2() {
+  let a = v4; //set number value to a
+  let b = v2; //set number value to b
+  return a - b;
+}
+
+function equal3() {
+  let a = v1; //set number value to a
+  let b = v5; //set number value to b
+  return a * b;
+}
+
+function equal4() {
+  let a = v4; //set number value to a
+  let b = v5; //set number value to b
+  return a / b;
+}
+
+function equal5() {
+  let a = v6; //set number value to a
+  let b = v3; //set number value to b
+  return a % b;
+}
 ```
 
-## Name :
+## Name : Printing Array elements with Comma delimiters
 
 ```js
-
+function printArray(array) {
+  console.log(`"${Array.from(array).join(",")}"`);
+  return `${Array.from(array).join(",")}`;
+}
 ```
 
-## Name :
+## Name : Grasshopper - Array Mean
 
 ```js
-
+var findAverage = function (nums) {
+  let total = 0;
+  nums.forEach((x) => {
+    total += x;
+  });
+  return total / nums.length;
+};
 ```
 
-## Name :
+## Name : Reversing Words in a String
 
 ```js
-
+function reverse(string) {
+  return string.split(" ").reverse().join(" ");
+}
 ```
 
-## Name :
+## Name : Sum of differences in array
 
 ```js
-
+function sumOfDifferences(arr) {
+  let count = 0;
+  if (arr.length) {
+    arr.sort((a, b) => b - a);
+    for (let i = 0; i < arr.length - 1; i++) {
+      count += arr[i] - arr[i + 1];
+    }
+    return count;
+  }
+  return 0;
+}
 ```
 
-## Name :
+## Name : Remove First and Last Character Part Two
 
 ```js
-
+function array(string) {
+  let arr = string.split(",");
+  arr.pop();
+  arr.shift();
+  if (arr.length > 0) {
+    return arr.join(" ");
+  }
+  return null;
+}
 ```
 
-## Name :
+## Name : String cleaning
 
 ```js
-
+function stringClean(s) {
+  return s.replace(/\d/g, "");
+}
 ```
 
-## Name :
+## Name : Enumerable Magic - Does My List Include This?
 
 ```js
-
+function include(arr, item) {
+  return arr.includes(item);
+}
 ```
 
-## Name :
+## Name : Check same case
 
 ```js
-
+function sameCase(a, b) {
+  if (
+    (a.match(/[a-z]/g) && b.match(/[a-z]/g)) ||
+    (a.match(/[A-Z]/g) && b.match(/[A-Z]/g))
+  ) {
+    return 1;
+  } else if (!a.match(/^[A-Za-z]$/) || !b.match(/^[A-Za-z]$/)) {
+    return -1;
+  }
+  return 0;
+}
 ```
 
-## Name :
+## Name : Simple validation of a username with regex
 
 ```js
-
+function validateUsr(username) {
+  console.log(username);
+  const res = /^[a-z0-9_]{4,16}$/.test(username);
+  return res;
+}
 ```
 
-## Name :
+## Name : Swap Values
 
 ```js
-
+function swapValues(args) {
+  var temp = args[1];
+  args[1] = args[0];
+  args[0] = temp;
+}
 ```
 
 ## Name :
