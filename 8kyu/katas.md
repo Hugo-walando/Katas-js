@@ -2491,28 +2491,66 @@ function closeCompare(a, b, margin = 0) {
 }
 ```
 
-## Name :
+## Name : Tip Calculator
 
 ```js
-
+function calculateTip(amount, rating) {
+  rating = rating.toLowerCase();
+  let tip = 0;
+  console.log(amount, rating);
+  switch (rating) {
+    case "terrible":
+      tip = 0;
+      break;
+    case "poor":
+      tip = 0.05 * amount;
+      break;
+    case "good":
+      tip = 0.1 * amount;
+      break;
+    case "great":
+      tip = 0.15 * amount;
+      break;
+    case "excellent":
+      tip = 0.2 * amount;
+      break;
+    default:
+      return "Rating not recognised";
+  }
+  return Math.ceil(tip);
+}
 ```
 
-## Name :
+## Name : Who is going to pay for the wall?
 
 ```js
-
+function whoIsPaying(name) {
+  let arr = [name];
+  if (name[0] && name[1] && name[0] + name[1] !== arr[0]) {
+    arr.push(name[0] + name[1]);
+    return arr;
+  } else if (name[0] && arr[0][0] !== name[0]) {
+    arr.push(name[0]);
+    return arr;
+  } else {
+    return arr;
+  }
+}
 ```
 
-## Name :
+## Name : Mr. Freeze
 
 ```js
-
+Object.freeze(MrFreeze);
 ```
 
-## Name :
+## Name : Are arrow functions odd?
 
 ```js
-
+function odds(values) {
+  // arrow it
+  return values.filter((x) => x % 2 !== 0);
+}
 ```
 
 ## Name :
